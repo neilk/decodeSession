@@ -1,13 +1,19 @@
 <?php
 
 /**
+ * decodeSession 
+ * 
  * Decode data from a user's session, without using the functions to load it into our current session.
  * Session data looks like this:
  *    wsUserID|i:30;wsUserName|s:7:"Mercury";wsLoginToken|N;wsToken|s:32:"750992346bb4c53ef65a93d265d6d62"
+ *
+ * @author Neil Kandalgaonkar <neilk@brevity.org>
+ * @license GPL v2 or greater
+ * 
  * @param String serialized session data
  * @return Array: key-value pairs of parsed session data
  */ 
-function decodeSessionData( $sessionData ) {
+function decodeSession( $sessionData ) {
   // session_decode() doesn't do what we want (tied to current session?), have to do this in PHP...
   $decoded = array();    
 
