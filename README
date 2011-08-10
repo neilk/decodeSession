@@ -1,9 +1,13 @@
-This is a function to decode PHP session data. Normally this data appears, for the current user, magically parsed for you,
-in $_SESSION. But sometimes you need to access that data from some other service, that might not even be the current user.
+This is a function to decode PHP session data. Normally this data
+appears, for the current user, magically parsed for you, in $_SESSION.
+But sometimes you need to access that data from some other service,
+that might not even be the current user.
 
-There are some functions in the php.net page about this, but as of August 2011 none of them tries really hard to avoid escaping issues.
-This isn't rigorously tested but seems to work okay. It turns out I did not need this for my project but maybe it will be
-helpful as a starting point to someone else.
+There are some functions in the php.net page about this, but as of
+August 2011 none of them tries really hard to avoid escaping issues.
+This isn't rigorously tested but seems to work okay. It turns out
+I did not need this for my project but maybe it will be helpful as
+a starting point to someone else.
 
 -- Neil Kandalgaonkar <neilk@brevity.org>
 
